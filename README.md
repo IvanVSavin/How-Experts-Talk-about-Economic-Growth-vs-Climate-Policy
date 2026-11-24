@@ -31,6 +31,10 @@ data/README.md	The input files you need, with checksums
 expected_output/	The figures of the paper and a list of every number in the text, exactly as produced for the manuscript
 R_session_info.txt	The versions of R and of the packages we used
 
+The data
+
+The folder data/ holds everything the analysis needs: the survey responses, the cleaned and translated data, the saved topic model, the AI-assisted coding and the authors' review of it. Before publishing, we removed what could identify respondents directly. The survey export no longer contains contact IDs, IP addresses, browser information or the location derived from the IP address. One email address and three passages in which respondents described their own role, publication or place of residence were replaced by a note in square brackets. The reviewers of the coding are numbered rather than named. data/README.md explains these changes in detail and lists every file with its checksum.
+None of these changes affects the results: with the published data, the code reproduces every figure, table and number of the article.
 
 How to run it
 Install R (version 4.3 or later) and then the packages: Rscript install_packages.R. Knitting to Word also needs pandoc, which comes with RStudio.
